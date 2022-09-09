@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Semana3_2022_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usando POO en Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJh-1M-HNt">
+                                <rect key="frame" x="20" y="74" width="374" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOX-Qd-NGC">
+                                <rect key="frame" x="20" y="151" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modelo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJF-B3-bhl">
+                                <rect key="frame" x="20" y="202" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTl-XA-lIS">
+                                <rect key="frame" x="20" y="253" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPl-DO-Crr">
+                                <rect key="frame" x="20" y="304" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42f-WJ-yXP">
+                                <rect key="frame" x="20" y="355" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Nuevo Carro"/>
+                                <connections>
+                                    <action selector="onTabNewCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Rt-d6-a9x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iod-yY-u6w">
+                                <rect key="frame" x="20" y="416" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Acelerar"/>
+                                <connections>
+                                    <action selector="onTabAcelerate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT3-wd-4yH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2E5-go-u49">
+                                <rect key="frame" x="20" y="477" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Detener"/>
+                                <connections>
+                                    <action selector="onTabStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jpa-Z9-j2p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLV-s7-ZTR">
+                                <rect key="frame" x="20" y="538" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Desacelerar"/>
+                                <connections>
+                                    <action selector="onTabSlowDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u26-bd-pnY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZOX-Qd-NGC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4FA-2C-g9S"/>
+                            <constraint firstItem="MJh-1M-HNt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JQm-pB-WAW"/>
+                            <constraint firstItem="ZOX-Qd-NGC" firstAttribute="top" secondItem="MJh-1M-HNt" secondAttribute="bottom" constant="30" id="KtY-wB-dct"/>
+                            <constraint firstItem="MJh-1M-HNt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Lqc-0T-MRN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2E5-go-u49" secondAttribute="trailing" constant="20" id="MLJ-LM-zzF"/>
+                            <constraint firstItem="2E5-go-u49" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MbG-xX-cdb"/>
+                            <constraint firstItem="RLV-s7-ZTR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Nox-Oy-71h"/>
+                            <constraint firstItem="RLV-s7-ZTR" firstAttribute="top" secondItem="2E5-go-u49" secondAttribute="bottom" constant="30" id="PCb-Af-del"/>
+                            <constraint firstItem="xTl-XA-lIS" firstAttribute="top" secondItem="BJF-B3-bhl" secondAttribute="bottom" constant="30" id="QR8-OC-bx5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MJh-1M-HNt" secondAttribute="trailing" constant="20" id="Rkq-X5-paL"/>
+                            <constraint firstItem="kPl-DO-Crr" firstAttribute="top" secondItem="xTl-XA-lIS" secondAttribute="bottom" constant="30" id="UeN-p3-Xef"/>
+                            <constraint firstItem="kPl-DO-Crr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VaH-00-1k5"/>
+                            <constraint firstItem="BJF-B3-bhl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vrn-zW-h3y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RLV-s7-ZTR" secondAttribute="trailing" constant="20" id="Vz0-eX-oWi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xTl-XA-lIS" secondAttribute="trailing" constant="20" id="WqO-6h-QX8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iod-yY-u6w" secondAttribute="trailing" constant="20" id="YIO-2n-VBr"/>
+                            <constraint firstItem="xTl-XA-lIS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZJy-0Y-fKq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kPl-DO-Crr" secondAttribute="trailing" constant="20" id="ccW-7h-rwy"/>
+                            <constraint firstItem="42f-WJ-yXP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="et8-Tc-fEc"/>
+                            <constraint firstItem="42f-WJ-yXP" firstAttribute="top" secondItem="kPl-DO-Crr" secondAttribute="bottom" constant="30" id="g4y-ZH-XyP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="42f-WJ-yXP" secondAttribute="trailing" constant="20" id="gx3-Mc-4pc"/>
+                            <constraint firstItem="BJF-B3-bhl" firstAttribute="top" secondItem="ZOX-Qd-NGC" secondAttribute="bottom" constant="30" id="lYL-C3-WkT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BJF-B3-bhl" secondAttribute="trailing" constant="20" id="mgJ-f7-DDj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZOX-Qd-NGC" secondAttribute="trailing" constant="20" id="r9T-5r-Uhi"/>
+                            <constraint firstItem="Iod-yY-u6w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rDt-4a-8Zg"/>
+                            <constraint firstItem="Iod-yY-u6w" firstAttribute="top" secondItem="42f-WJ-yXP" secondAttribute="bottom" constant="30" id="tS2-jA-wiY"/>
+                            <constraint firstItem="2E5-go-u49" firstAttribute="top" secondItem="Iod-yY-u6w" secondAttribute="bottom" constant="30" id="yIp-Ah-0SF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblColor" destination="xTl-XA-lIS" id="Znk-u3-3fO"/>
+                        <outlet property="lblMarca" destination="ZOX-Qd-NGC" id="ZDG-Ma-wYH"/>
+                        <outlet property="lblModelo" destination="BJF-B3-bhl" id="7eb-9w-93A"/>
+                        <outlet property="lblVelocidad" destination="kPl-DO-Crr" id="bpp-9A-iHU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
